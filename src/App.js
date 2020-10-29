@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import { NavigationBar } from "./containers/Navigation/NavigationBar";
+import { Sidebar1 } from "./containers/Navigation/Sidebar1";
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import SummaryBox from "./components/SummaryBox";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+            <React.Fragment>
+                <Router>
+                    <Sidebar1></Sidebar1>
+                    <NavigationBar />
+                    {/* <SummaryBox/> */}
+                </Router>
+            </React.Fragment>
+        );
+    }
 }
 
 export default App;
