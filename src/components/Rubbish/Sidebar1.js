@@ -94,10 +94,10 @@
 //     }
 // }
 
-// class Sidebar extends Component {
+// class Sidebar1 extends Component {
 //     render() {
 //         return <SideNav></SideNav>;
 //     }
 // }
 
-// export default Sidebar;
+// export default Sidebar1;

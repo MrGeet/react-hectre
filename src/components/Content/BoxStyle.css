@@ -1,0 +1,33 @@
+.box-style {
+    position: relative;
+    height: 300px;
+    justify-content: center;
+    background-color: white;
+    /* display: flex; */
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #ccc;
+    margin: 10px;
+}
+
+.half{
+    width: 50%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.btn{
+    position: absolute;
+    font-size: 40px;
+    padding: 10px;
+    color: #828282;
+
+}
+
+.btn.print{
+    right: 20px;
+}
+.btn.download{
+    right: 50px;
+}

@@ -4,11 +4,20 @@ import styled from "styled-components"
 
 const Styles = styled.div`
 .navbar{
-    background-color: #efefef;
+    background-color: white;
     box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
-    /* position: absolute; */
-    /* left: 100%; */
-    margin-left: 67px;
+    position: relative;
+    /* width: 100%; */
+    /* left: 0; */
+    /* margin-left: 64px; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* display: flex; */
+    height: 60px;
+}
+
+.ml-auto{
+    /* margin-right: 75px; */
 }
 
 .navbar-brand, .navbar-nav .nav-link{
