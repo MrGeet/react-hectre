@@ -4,7 +4,7 @@
     height: 100vh;
     display: flex;
     top: 0;
-    /* width: auto; */
+    /* width: 250px; */
     justify-content: center; 
      align-items: start;
   }
