@@ -4,15 +4,19 @@
     height: 100vh;
     display: flex;
     top: 0;
-    /* width: 250px; */
+    /* width: 0px; */
     justify-content: center; 
      align-items: start;
+    transition: 850ms;
+
+  }
+
+  .navbar.active{
+    width: 200px;
+    transition: 350ms;
   }
   
   .menu-bars {
-    margin-top: 1rem;
-    /* margin-left: 3rem; */
-    padding-left: 1rem;
     font-size: 2rem;
     background: none;
     color: white;
@@ -25,17 +29,18 @@
     transition: 350ms;
 
   }
-/*   
-  .nav-menu {
+  
+  /* .nav-menu {
     background-color: #C65F4F;
-    width: 250px;
+    width: 200px;
     height: 100vh;
     display: flex;
-    justify-content: center;
     position: fixed;
     top: 0;
     left: -100%;
     transition: 850ms;
+    justify-content: center; 
+    align-items: start;
   }
    
   .nav-menu.active {
@@ -47,25 +52,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
-    padding: 8px 0px 8px 16px;
+    padding: 8px 0px 8px 0px;
     list-style: none;
+    margin-left: 8px;
     height: 60px;
-       /* border-style: dashed; */
-    /* padding-left: 1rem; */
-    /* width: 95%; */
+    /* background-color: rgb(0, 29, 92); */
+    /* width: 30px; */
+    /* border: 1px solid red; */
   }
   
-  .nav-text a {
+  .nav-text a{
     text-decoration: none;
     color: #f5f5f5;
     font-size: 18px;
+    /* background-color: black; */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
-    /* padding: 0 16px; */
     border-radius: 4px;
   }
   
@@ -73,6 +78,12 @@
     opacity: 0.7;
     transition: 350ms;
   }
+
+  .nav-text a:active {
+    opacity: 0.7;
+    background-color: black;
+  }
+  
   
   .nav-menu-items {
     width: 100%;
@@ -93,18 +104,16 @@
 
   .title{
     left: -100%;
-    transition: 850ms;
+    /* transition: 850ms; */
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
     background-color: #C65F4F;
     z-index: -1;
-    height: 110px;
-    /* top: 50%; */
   }
   .title.active{
-    left: 0;
+    left: 70px;
+
     transition: 350ms;
   }
