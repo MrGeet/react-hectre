@@ -9,15 +9,16 @@ import { IconContext } from "react-icons";
 
 function Sidebar() {
     const [sidebar, setSidebar] = useState(false);
+    // const [active, setActive] = useState("/");
 
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
         <>
             <IconContext.Provider value={{color: '#fff'}}>
-            <nav className="navbar">
-                <ul className="nav-menu-items" onClick={showSidebar}>
-                    <li className="navbar-toggle">
+            <nav className={!sidebar ? "navbar" : "navbar active"}>
+                <ul className="nav-menu-items" >
+                    <li className="navbar-toggle" onClick={showSidebar}>
                         <Link to="#" className="menu-bars">
                         {sidebar ? <RiIcons.RiMenuFoldLine /> : <RiIcons.RiMenuUnfoldLine />}
                             
@@ -25,11 +26,11 @@ function Sidebar() {
                     </li>
                     {SidebarData.map((item, index) => {
                         return (
-                            <li key={index} className={item.cName}>
+                            <li key={index} className={item.cName} onClick={sidebar?showSidebar:null}>
                                 <Link to={item.path}>
                                     {item.icon}
-                                    {/* <span className={sidebar ? "title active" : "title"}>{item.title}</span> */}
-                        {sidebar? <span>{item.title}</span>:null}
+                                    <span className={sidebar ? "title active" : "title"}>{item.title}</span>
+                        {/* {sidebar? <span>{item.title}</span>:null} */}
                                     </Link>
                             </li>
                         );
